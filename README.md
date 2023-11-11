@@ -9,6 +9,7 @@
 | **Query Operators**     | `$and`         | Joins query clauses with a logical AND                              | `{ $and: [ { field1: value1 }, { field2: value2 } ] }`                         |
 | **Query Operators**     | `$or`          | Joins query clauses with a logical OR                               | `{ $or: [ { field1: value1 }, { field2: value2 } ] }`                          |
 | **Query Operators**     | `$not`         | Inverts the effect of a query expression                            | `{ field: { $not: { $eq: value } } }`                                          |
+| **Query Operators**     | `$nor`         | Joins query clauses with a logical NOR                              | `{ $nor: [ { field1: value1 }, { field2: value2 } ] }`                         |
 | **Query Operators**     | `$exists`      | Matches documents that have the specified field                     | `{ field: { $exists: true } }`                                                 |
 | **Query Operators**     | `$type`        | Matches documents where the value has a specified BSON data type    | `{ field: { $type: "string" } }`                                               |
 | **Query Operators**     | `$in`          | Matches any of the values specified in an array                     | `{ field: { $in: [value1, value2] } }`                                         |
